@@ -1,0 +1,1426 @@
+<testsuites id="" name="" tests="60" failures="23" skipped="0" errors="0" time="103.62450299999999">
+<testsuite name="basic-functionality.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="chromium" tests="5" failures="0" skipped="0" time="13.886" errors="0">
+<testcase name="Basic Application Functionality › should load the homepage successfully" classname="basic-functionality.spec.ts" time="1.262">
+</testcase>
+<testcase name="Basic Application Functionality › should have responsive design" classname="basic-functionality.spec.ts" time="2.304">
+</testcase>
+<testcase name="Basic Application Functionality › should handle navigation" classname="basic-functionality.spec.ts" time="1.262">
+</testcase>
+<testcase name="Basic Application Functionality › should handle API endpoints" classname="basic-functionality.spec.ts" time="3.374">
+<system-out>
+<![CDATA[API health check not available: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+Expected value: [32m503[39m
+Received array: [31m[200, 404][39m
+    at [90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/[39mtests/e2e/basic-functionality.spec.ts:58:26 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+      [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    stepId: [32m'expect@5'[39m,
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toContain'[39m,
+    title: [32m'toContain'[39m,
+    params: { expected: [33m503[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'[39m,
+      line: [33m58[39m,
+      column: [33m26[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@5'[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1752906933034[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m\n'[39m +
+        [32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Basic Application Functionality › should load without JavaScript errors" classname="basic-functionality.spec.ts" time="5.684">
+</testcase>
+</testsuite>
+<testsuite name="user-journey.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="chromium" tests="7" failures="5" skipped="0" time="73.562" errors="0">
+<testcase name="Complete User Journey › should complete full idea-to-blueprint journey" classname="user-journey.spec.ts" time="5.971">
+<failure message="user-journey.spec.ts:59:7 should complete full idea-to-blueprint journey" type="FAILURE">
+<![CDATA[  [chromium] › user-journey.spec.ts:59:7 › Complete User Journey › should complete full idea-to-blueprint journey 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Processing')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text=Processing')
+
+
+      76 |     
+      77 |     // Wait for processing to complete (with timeout)
+    > 78 |     await expect(page.locator('text=Processing', { timeout: 5000 })).toBeVisible();
+         |                                                                      ^
+      79 |     
+      80 |     // Wait for blueprint to be generated
+      81 |     await expect(page.locator('text=Blueprint', { timeout: 30000 })).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Complete User Journey › should handle authentication flow" classname="user-journey.spec.ts" time="0.784">
+</testcase>
+<testcase name="Complete User Journey › should handle project management" classname="user-journey.spec.ts" time="4.593">
+<failure message="user-journey.spec.ts:129:7 should handle project management" type="FAILURE">
+<![CDATA[  [chromium] › user-journey.spec.ts:129:7 › Complete User Journey › should handle project management 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      134 |     const isAuthPage = await page.locator('text=Sign In').isVisible();
+      135 |     
+    > 136 |     expect(isProjectsPage || isAuthPage).toBeTruthy();
+          |                                          ^
+      137 |     
+      138 |     if (isProjectsPage) {
+      139 |       // Test project creation
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-chromium/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should handle API errors gracefully" classname="user-journey.spec.ts" time="30.085">
+<failure message="user-journey.spec.ts:150:7 should handle API errors gracefully" type="FAILURE">
+<![CDATA[  [chromium] › user-journey.spec.ts:150:7 › Error Handling › should handle API errors gracefully ───
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        54 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      165 |       
+      166 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 167 |       await submitButton.click();
+          |                          ^
+      168 |       
+      169 |       // Should show error message
+      170 |       await expect(page.locator('text=Error, text=Failed, text=Something went wrong')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should validate input requirements" classname="user-journey.spec.ts" time="30.305">
+<failure message="user-journey.spec.ts:174:7 should validate input requirements" type="FAILURE">
+<![CDATA[  [chromium] › user-journey.spec.ts:174:7 › Error Handling › should validate input requirements ────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        55 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      179 |       // Try to submit empty input
+      180 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 181 |       await submitButton.click();
+          |                          ^
+      182 |       
+      183 |       // Should show validation error
+      184 |       await expect(page.locator('text=required, text=Please enter, text=minimum')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Responsive Design › should work on mobile devices" classname="user-journey.spec.ts" time="1.137">
+</testcase>
+<testcase name="Responsive Design › should work on tablet devices" classname="user-journey.spec.ts" time="0.687">
+<failure message="user-journey.spec.ts:206:7 should work on tablet devices" type="FAILURE">
+<![CDATA[  [chromium] › user-journey.spec.ts:206:7 › Responsive Design › should work on tablet devices ──────
+
+    Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.
+
+      214 |     // Test touch interactions
+      215 |     const ideaInput = page.locator('textarea').first();
+    > 216 |     await ideaInput.tap();
+          |                     ^
+      217 |     await expect(ideaInput).toBeFocused();
+      218 |   });
+      219 | });
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/video.webm]]
+
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="firefox" tests="5" failures="0" skipped="0" time="15.22" errors="0">
+<testcase name="Basic Application Functionality › should load the homepage successfully" classname="basic-functionality.spec.ts" time="4.053">
+</testcase>
+<testcase name="Basic Application Functionality › should have responsive design" classname="basic-functionality.spec.ts" time="4.827">
+</testcase>
+<testcase name="Basic Application Functionality › should handle navigation" classname="basic-functionality.spec.ts" time="3.518">
+</testcase>
+<testcase name="Basic Application Functionality › should handle API endpoints" classname="basic-functionality.spec.ts" time="0.358">
+<system-out>
+<![CDATA[API health check not available: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+Expected value: [32m503[39m
+Received array: [31m[200, 404][39m
+    at [90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/[39mtests/e2e/basic-functionality.spec.ts:58:26 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+      [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    stepId: [32m'expect@5'[39m,
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toContain'[39m,
+    title: [32m'toContain'[39m,
+    params: { expected: [33m503[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'[39m,
+      line: [33m58[39m,
+      column: [33m26[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@5'[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1752906944196[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m\n'[39m +
+        [32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Basic Application Functionality › should load without JavaScript errors" classname="basic-functionality.spec.ts" time="2.464">
+</testcase>
+</testsuite>
+<testsuite name="user-journey.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="firefox" tests="7" failures="5" skipped="0" time="71.015" errors="0">
+<testcase name="Complete User Journey › should complete full idea-to-blueprint journey" classname="user-journey.spec.ts" time="6.472">
+<failure message="user-journey.spec.ts:59:7 should complete full idea-to-blueprint journey" type="FAILURE">
+<![CDATA[  [firefox] › user-journey.spec.ts:59:7 › Complete User Journey › should complete full idea-to-blueprint journey 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Processing')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text=Processing')
+
+
+      76 |     
+      77 |     // Wait for processing to complete (with timeout)
+    > 78 |     await expect(page.locator('text=Processing', { timeout: 5000 })).toBeVisible();
+         |                                                                      ^
+      79 |     
+      80 |     // Wait for blueprint to be generated
+      81 |     await expect(page.locator('text=Blueprint', { timeout: 30000 })).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Complete User Journey › should handle authentication flow" classname="user-journey.spec.ts" time="0.984">
+</testcase>
+<testcase name="Complete User Journey › should handle project management" classname="user-journey.spec.ts" time="1.232">
+<failure message="user-journey.spec.ts:129:7 should handle project management" type="FAILURE">
+<![CDATA[  [firefox] › user-journey.spec.ts:129:7 › Complete User Journey › should handle project management 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      134 |     const isAuthPage = await page.locator('text=Sign In').isVisible();
+      135 |     
+    > 136 |     expect(isProjectsPage || isAuthPage).toBeTruthy();
+          |                                          ^
+      137 |     
+      138 |     if (isProjectsPage) {
+      139 |       // Test project creation
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-firefox/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should handle API errors gracefully" classname="user-journey.spec.ts" time="30.155">
+<failure message="user-journey.spec.ts:150:7 should handle API errors gracefully" type="FAILURE">
+<![CDATA[  [firefox] › user-journey.spec.ts:150:7 › Error Handling › should handle API errors gracefully ────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        51 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      165 |       
+      166 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 167 |       await submitButton.click();
+          |                          ^
+      168 |       
+      169 |       // Should show error message
+      170 |       await expect(page.locator('text=Error, text=Failed, text=Something went wrong')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should validate input requirements" classname="user-journey.spec.ts" time="30.149">
+<failure message="user-journey.spec.ts:174:7 should validate input requirements" type="FAILURE">
+<![CDATA[  [firefox] › user-journey.spec.ts:174:7 › Error Handling › should validate input requirements ─────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        53 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      179 |       // Try to submit empty input
+      180 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 181 |       await submitButton.click();
+          |                          ^
+      182 |       
+      183 |       // Should show validation error
+      184 |       await expect(page.locator('text=required, text=Please enter, text=minimum')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Responsive Design › should work on mobile devices" classname="user-journey.spec.ts" time="1.131">
+</testcase>
+<testcase name="Responsive Design › should work on tablet devices" classname="user-journey.spec.ts" time="0.892">
+<failure message="user-journey.spec.ts:206:7 should work on tablet devices" type="FAILURE">
+<![CDATA[  [firefox] › user-journey.spec.ts:206:7 › Responsive Design › should work on tablet devices ───────
+
+    Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.
+
+      214 |     // Test touch interactions
+      215 |     const ideaInput = page.locator('textarea').first();
+    > 216 |     await ideaInput.tap();
+          |                     ^
+      217 |     await expect(ideaInput).toBeFocused();
+      218 |   });
+      219 | });
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/video.webm]]
+
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="webkit" tests="5" failures="0" skipped="0" time="8.605" errors="0">
+<testcase name="Basic Application Functionality › should load the homepage successfully" classname="basic-functionality.spec.ts" time="2.256">
+</testcase>
+<testcase name="Basic Application Functionality › should have responsive design" classname="basic-functionality.spec.ts" time="2.172">
+</testcase>
+<testcase name="Basic Application Functionality › should handle navigation" classname="basic-functionality.spec.ts" time="1.685">
+</testcase>
+<testcase name="Basic Application Functionality › should handle API endpoints" classname="basic-functionality.spec.ts" time="0.532">
+<system-out>
+<![CDATA[API health check not available: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+Expected value: [32m503[39m
+Received array: [31m[200, 404][39m
+    at [90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/[39mtests/e2e/basic-functionality.spec.ts:58:26 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+      [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    stepId: [32m'expect@5'[39m,
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toContain'[39m,
+    title: [32m'toContain'[39m,
+    params: { expected: [33m503[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'[39m,
+      line: [33m58[39m,
+      column: [33m26[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@5'[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1752906964336[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m\n'[39m +
+        [32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Basic Application Functionality › should load without JavaScript errors" classname="basic-functionality.spec.ts" time="1.96">
+</testcase>
+</testsuite>
+<testsuite name="user-journey.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="webkit" tests="7" failures="5" skipped="0" time="70.488" errors="0">
+<testcase name="Complete User Journey › should complete full idea-to-blueprint journey" classname="user-journey.spec.ts" time="6.727">
+<failure message="user-journey.spec.ts:59:7 should complete full idea-to-blueprint journey" type="FAILURE">
+<![CDATA[  [webkit] › user-journey.spec.ts:59:7 › Complete User Journey › should complete full idea-to-blueprint journey 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Processing')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text=Processing')
+
+
+      76 |     
+      77 |     // Wait for processing to complete (with timeout)
+    > 78 |     await expect(page.locator('text=Processing', { timeout: 5000 })).toBeVisible();
+         |                                                                      ^
+      79 |     
+      80 |     // Wait for blueprint to be generated
+      81 |     await expect(page.locator('text=Blueprint', { timeout: 30000 })).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Complete User Journey › should handle authentication flow" classname="user-journey.spec.ts" time="1.332">
+</testcase>
+<testcase name="Complete User Journey › should handle project management" classname="user-journey.spec.ts" time="1.095">
+<failure message="user-journey.spec.ts:129:7 should handle project management" type="FAILURE">
+<![CDATA[  [webkit] › user-journey.spec.ts:129:7 › Complete User Journey › should handle project management ─
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      134 |     const isAuthPage = await page.locator('text=Sign In').isVisible();
+      135 |     
+    > 136 |     expect(isProjectsPage || isAuthPage).toBeTruthy();
+          |                                          ^
+      137 |     
+      138 |     if (isProjectsPage) {
+      139 |       // Test project creation
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-webkit/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should handle API errors gracefully" classname="user-journey.spec.ts" time="30.116">
+<failure message="user-journey.spec.ts:150:7 should handle API errors gracefully" type="FAILURE">
+<![CDATA[  [webkit] › user-journey.spec.ts:150:7 › Error Handling › should handle API errors gracefully ─────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        56 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      165 |       
+      166 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 167 |       await submitButton.click();
+          |                          ^
+      168 |       
+      169 |       // Should show error message
+      170 |       await expect(page.locator('text=Error, text=Failed, text=Something went wrong')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should validate input requirements" classname="user-journey.spec.ts" time="30.123">
+<failure message="user-journey.spec.ts:174:7 should validate input requirements" type="FAILURE">
+<![CDATA[  [webkit] › user-journey.spec.ts:174:7 › Error Handling › should validate input requirements ──────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        56 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      179 |       // Try to submit empty input
+      180 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 181 |       await submitButton.click();
+          |                          ^
+      182 |       
+      183 |       // Should show validation error
+      184 |       await expect(page.locator('text=required, text=Please enter, text=minimum')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Responsive Design › should work on mobile devices" classname="user-journey.spec.ts" time="0.557">
+</testcase>
+<testcase name="Responsive Design › should work on tablet devices" classname="user-journey.spec.ts" time="0.538">
+<failure message="user-journey.spec.ts:206:7 should work on tablet devices" type="FAILURE">
+<![CDATA[  [webkit] › user-journey.spec.ts:206:7 › Responsive Design › should work on tablet devices ────────
+
+    Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.
+
+      214 |     // Test touch interactions
+      215 |     const ideaInput = page.locator('textarea').first();
+    > 216 |     await ideaInput.tap();
+          |                     ^
+      217 |     await expect(ideaInput).toBeFocused();
+      218 |   });
+      219 | });
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/video.webm]]
+
+[[ATTACHMENT|user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="Mobile Chrome" tests="5" failures="0" skipped="0" time="3.096" errors="0">
+<testcase name="Basic Application Functionality › should load the homepage successfully" classname="basic-functionality.spec.ts" time="0.51">
+</testcase>
+<testcase name="Basic Application Functionality › should have responsive design" classname="basic-functionality.spec.ts" time="1.158">
+</testcase>
+<testcase name="Basic Application Functionality › should handle navigation" classname="basic-functionality.spec.ts" time="0.419">
+</testcase>
+<testcase name="Basic Application Functionality › should handle API endpoints" classname="basic-functionality.spec.ts" time="0.062">
+<system-out>
+<![CDATA[API health check not available: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+Expected value: [32m503[39m
+Received array: [31m[200, 404][39m
+    at [90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/[39mtests/e2e/basic-functionality.spec.ts:58:26 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+      [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    stepId: [32m'expect@5'[39m,
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toContain'[39m,
+    title: [32m'toContain'[39m,
+    params: { expected: [33m503[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'[39m,
+      line: [33m58[39m,
+      column: [33m26[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@5'[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1752906976790[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m\n'[39m +
+        [32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Basic Application Functionality › should load without JavaScript errors" classname="basic-functionality.spec.ts" time="0.947">
+</testcase>
+</testsuite>
+<testsuite name="user-journey.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="Mobile Chrome" tests="7" failures="4" skipped="0" time="67.942" errors="0">
+<testcase name="Complete User Journey › should complete full idea-to-blueprint journey" classname="user-journey.spec.ts" time="5.69">
+<failure message="user-journey.spec.ts:59:7 should complete full idea-to-blueprint journey" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › user-journey.spec.ts:59:7 › Complete User Journey › should complete full idea-to-blueprint journey 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Processing')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text=Processing')
+
+
+      76 |     
+      77 |     // Wait for processing to complete (with timeout)
+    > 78 |     await expect(page.locator('text=Processing', { timeout: 5000 })).toBeVisible();
+         |                                                                      ^
+      79 |     
+      80 |     // Wait for blueprint to be generated
+      81 |     await expect(page.locator('text=Blueprint', { timeout: 30000 })).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Complete User Journey › should handle authentication flow" classname="user-journey.spec.ts" time="0.479">
+</testcase>
+<testcase name="Complete User Journey › should handle project management" classname="user-journey.spec.ts" time="0.46">
+<failure message="user-journey.spec.ts:129:7 should handle project management" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › user-journey.spec.ts:129:7 › Complete User Journey › should handle project management 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      134 |     const isAuthPage = await page.locator('text=Sign In').isVisible();
+      135 |     
+    > 136 |     expect(isProjectsPage || isAuthPage).toBeTruthy();
+          |                                          ^
+      137 |     
+      138 |     if (isProjectsPage) {
+      139 |       // Test project creation
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should handle API errors gracefully" classname="user-journey.spec.ts" time="30.135">
+<failure message="user-journey.spec.ts:150:7 should handle API errors gracefully" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › user-journey.spec.ts:150:7 › Error Handling › should handle API errors gracefully 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        57 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      165 |       
+      166 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 167 |       await submitButton.click();
+          |                          ^
+      168 |       
+      169 |       // Should show error message
+      170 |       await expect(page.locator('text=Error, text=Failed, text=Something went wrong')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should validate input requirements" classname="user-journey.spec.ts" time="30.195">
+<failure message="user-journey.spec.ts:174:7 should validate input requirements" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › user-journey.spec.ts:174:7 › Error Handling › should validate input requirements 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        57 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      179 |       // Try to submit empty input
+      180 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 181 |       await submitButton.click();
+          |                          ^
+      182 |       
+      183 |       // Should show validation error
+      184 |       await expect(page.locator('text=required, text=Please enter, text=minimum')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Responsive Design › should work on mobile devices" classname="user-journey.spec.ts" time="0.447">
+</testcase>
+<testcase name="Responsive Design › should work on tablet devices" classname="user-journey.spec.ts" time="0.536">
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="Mobile Safari" tests="5" failures="0" skipped="0" time="3.286" errors="0">
+<testcase name="Basic Application Functionality › should load the homepage successfully" classname="basic-functionality.spec.ts" time="0.75">
+</testcase>
+<testcase name="Basic Application Functionality › should have responsive design" classname="basic-functionality.spec.ts" time="1.071">
+</testcase>
+<testcase name="Basic Application Functionality › should handle navigation" classname="basic-functionality.spec.ts" time="0.456">
+</testcase>
+<testcase name="Basic Application Functionality › should handle API endpoints" classname="basic-functionality.spec.ts" time="0.084">
+<system-out>
+<![CDATA[API health check not available: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+Expected value: [32m503[39m
+Received array: [31m[200, 404][39m
+    at [90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/[39mtests/e2e/basic-functionality.spec.ts:58:26 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+      [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [32mSymbol(step)[39m: {
+    stepId: [32m'expect@5'[39m,
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toContain'[39m,
+    title: [32m'toContain'[39m,
+    params: { expected: [33m503[39m },
+    infectParentStepsWithError: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'[39m,
+      line: [33m58[39m,
+      column: [33m26[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@5'[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1752906987810[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Expected value: \x1B[32m503\x1B[39m\n'[39m +
+        [32m'Received array: \x1B[31m[200, 404]\x1B[39m\n'[39m +
+        [32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Basic Application Functionality › should load without JavaScript errors" classname="basic-functionality.spec.ts" time="0.925">
+</testcase>
+</testsuite>
+<testsuite name="user-journey.spec.ts" timestamp="2025-07-19T06:35:29.262Z" hostname="Mobile Safari" tests="7" failures="4" skipped="0" time="68.082" errors="0">
+<testcase name="Complete User Journey › should complete full idea-to-blueprint journey" classname="user-journey.spec.ts" time="5.484">
+<failure message="user-journey.spec.ts:59:7 should complete full idea-to-blueprint journey" type="FAILURE">
+<![CDATA[  [Mobile Safari] › user-journey.spec.ts:59:7 › Complete User Journey › should complete full idea-to-blueprint journey 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('text=Processing')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text=Processing')
+
+
+      76 |     
+      77 |     // Wait for processing to complete (with timeout)
+    > 78 |     await expect(page.locator('text=Processing', { timeout: 5000 })).toBeVisible();
+         |                                                                      ^
+      79 |     
+      80 |     // Wait for blueprint to be generated
+      81 |     await expect(page.locator('text=Blueprint', { timeout: 30000 })).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Complete User Journey › should handle authentication flow" classname="user-journey.spec.ts" time="0.717">
+</testcase>
+<testcase name="Complete User Journey › should handle project management" classname="user-journey.spec.ts" time="0.451">
+<failure message="user-journey.spec.ts:129:7 should handle project management" type="FAILURE">
+<![CDATA[  [Mobile Safari] › user-journey.spec.ts:129:7 › Complete User Journey › should handle project management 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      134 |     const isAuthPage = await page.locator('text=Sign In').isVisible();
+      135 |     
+    > 136 |     expect(isProjectsPage || isAuthPage).toBeTruthy();
+          |                                          ^
+      137 |     
+      138 |     if (isProjectsPage) {
+      139 |       // Test project creation
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should handle API errors gracefully" classname="user-journey.spec.ts" time="30.086">
+<failure message="user-journey.spec.ts:150:7 should handle API errors gracefully" type="FAILURE">
+<![CDATA[  [Mobile Safari] › user-journey.spec.ts:150:7 › Error Handling › should handle API errors gracefully 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        56 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      165 |       
+      166 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 167 |       await submitButton.click();
+          |                          ^
+      168 |       
+      169 |       // Should show error message
+      170 |       await expect(page.locator('text=Error, text=Failed, text=Something went wrong')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Error Handling › should validate input requirements" classname="user-journey.spec.ts" time="30.087">
+<failure message="user-journey.spec.ts:174:7 should validate input requirements" type="FAILURE">
+<![CDATA[  [Mobile Safari] › user-journey.spec.ts:174:7 › Error Handling › should validate input requirements 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Generate"), button:has-text("Submit")').first()
+        - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8">Generate Blueprint</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        57 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      179 |       // Try to submit empty input
+      180 |       const submitButton = page.locator('button:has-text("Generate"), button:has-text("Submit")').first();
+    > 181 |       await submitButton.click();
+          |                          ^
+      182 |       
+      183 |       // Should show validation error
+      184 |       await expect(page.locator('text=required, text=Please enter, text=minimum')).toBeVisible();
+        at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Responsive Design › should work on mobile devices" classname="user-journey.spec.ts" time="0.562">
+</testcase>
+<testcase name="Responsive Design › should work on tablet devices" classname="user-journey.spec.ts" time="0.695">
+</testcase>
+</testsuite>
+</testsuites>

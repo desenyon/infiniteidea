@@ -1,0 +1,3095 @@
+{
+  "config": {
+    "configFile": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/playwright.config.ts",
+    "rootDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.1",
+    "workers": 5,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://localhost:3000",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "basic-functionality.spec.ts",
+      "file": "basic-functionality.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Basic Application Functionality",
+          "file": "basic-functionality.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load the homepage successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1262,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:29.639Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-96e882187a6bc9d93ee8",
+              "file": "basic-functionality.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "should have responsive design",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2304,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:29.663Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-d7a3ee8202b847f83eea",
+              "file": "basic-functionality.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "should handle navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1262,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:29.679Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-91a9539fb7f633417ea9",
+              "file": "basic-functionality.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "should handle API endpoints",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3374,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "API health check not available: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m503\u001b[39m\nReceived array: \u001b[31m[200, 404]\u001b[39m\n    at \u001b[90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/\u001b[39mtests/e2e/basic-functionality.spec.ts:58:26 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n      \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m\n  },\n  \u001b[32mSymbol(step)\u001b[39m: {\n    stepId: \u001b[32m'expect@5'\u001b[39m,\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toContain'\u001b[39m,\n    title: \u001b[32m'toContain'\u001b[39m,\n    params: { expected: \u001b[33m503\u001b[39m },\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'\u001b[39m,\n      line: \u001b[33m58\u001b[39m,\n      column: \u001b[33m26\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@5'\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1752906933034\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:29.663Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-003be5387d5c97395df8",
+              "file": "basic-functionality.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "should load without JavaScript errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5684,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:29.673Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-5fec6e777fd991442bf3",
+              "file": "basic-functionality.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "should load the homepage successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 4053,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:37.340Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-f0cdc37fd54f5a34ee8b",
+              "file": "basic-functionality.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "should have responsive design",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4827,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:38.377Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-8879a53bed26948d412e",
+              "file": "basic-functionality.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "should handle navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3518,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:39.013Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-4fa3cf2a3ea380df96dd",
+              "file": "basic-functionality.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "should handle API endpoints",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 358,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "API health check not available: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m503\u001b[39m\nReceived array: \u001b[31m[200, 404]\u001b[39m\n    at \u001b[90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/\u001b[39mtests/e2e/basic-functionality.spec.ts:58:26 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n      \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m\n  },\n  \u001b[32mSymbol(step)\u001b[39m: {\n    stepId: \u001b[32m'expect@5'\u001b[39m,\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toContain'\u001b[39m,\n    title: \u001b[32m'toContain'\u001b[39m,\n    params: { expected: \u001b[33m503\u001b[39m },\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'\u001b[39m,\n      line: \u001b[33m58\u001b[39m,\n      column: \u001b[33m26\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@5'\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1752906944196\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:43.843Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-1a01dcac84f1569fe87e",
+              "file": "basic-functionality.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "should load without JavaScript errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2464,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:44.230Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-4d2dbf1b52b2a15e13f5",
+              "file": "basic-functionality.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "should load the homepage successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2256,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:55.022Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-4303ad6bc23ea0a9a4a7",
+              "file": "basic-functionality.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "should have responsive design",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2172,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:03.160Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-b24a287c04373fa024a2",
+              "file": "basic-functionality.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "should handle navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1685,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:05.219Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-109f6d64624397d67b57",
+              "file": "basic-functionality.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "should handle API endpoints",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 532,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "API health check not available: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m503\u001b[39m\nReceived array: \u001b[31m[200, 404]\u001b[39m\n    at \u001b[90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/\u001b[39mtests/e2e/basic-functionality.spec.ts:58:26 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n      \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m\n  },\n  \u001b[32mSymbol(step)\u001b[39m: {\n    stepId: \u001b[32m'expect@5'\u001b[39m,\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toContain'\u001b[39m,\n    title: \u001b[32m'toContain'\u001b[39m,\n    params: { expected: \u001b[33m503\u001b[39m },\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'\u001b[39m,\n      line: \u001b[33m58\u001b[39m,\n      column: \u001b[33m26\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@5'\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1752906964336\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:03.815Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-70fc7b3952469944fd9f",
+              "file": "basic-functionality.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "should load without JavaScript errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1960,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:04.362Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-604f42e2da7d687cfcf8",
+              "file": "basic-functionality.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "should load the homepage successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 510,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:14.375Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-8a97fef7df568748e259",
+              "file": "basic-functionality.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "should have responsive design",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1158,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:15.139Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-1e5f7662279fb9f5ef9c",
+              "file": "basic-functionality.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "should handle navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 419,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:16.304Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-d685dc6a2dd8d774f21b",
+              "file": "basic-functionality.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "should handle API endpoints",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 62,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "API health check not available: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m503\u001b[39m\nReceived array: \u001b[31m[200, 404]\u001b[39m\n    at \u001b[90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/\u001b[39mtests/e2e/basic-functionality.spec.ts:58:26 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n      \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m\n  },\n  \u001b[32mSymbol(step)\u001b[39m: {\n    stepId: \u001b[32m'expect@5'\u001b[39m,\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toContain'\u001b[39m,\n    title: \u001b[32m'toContain'\u001b[39m,\n    params: { expected: \u001b[33m503\u001b[39m },\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'\u001b[39m,\n      line: \u001b[33m58\u001b[39m,\n      column: \u001b[33m26\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@5'\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1752906976790\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:16.727Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-e9bc2ee77336774651a3",
+              "file": "basic-functionality.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "should load without JavaScript errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 947,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:16.794Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-bf809b6226e1f57446cf",
+              "file": "basic-functionality.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "should load the homepage successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 750,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:25.252Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-b06b74c2f8a85c4c650b",
+              "file": "basic-functionality.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "should have responsive design",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1071,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:26.179Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-a7c9cba3b336ee6bf425",
+              "file": "basic-functionality.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "should handle navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 456,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:27.254Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-141414aace63e71f8a05",
+              "file": "basic-functionality.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "should handle API endpoints",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 84,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "API health check not available: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m503\u001b[39m\nReceived array: \u001b[31m[200, 404]\u001b[39m\n    at \u001b[90m/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/\u001b[39mtests/e2e/basic-functionality.spec.ts:58:26 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n      \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m\n  },\n  \u001b[32mSymbol(step)\u001b[39m: {\n    stepId: \u001b[32m'expect@5'\u001b[39m,\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toContain'\u001b[39m,\n    title: \u001b[32m'toContain'\u001b[39m,\n    params: { expected: \u001b[33m503\u001b[39m },\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts'\u001b[39m,\n      line: \u001b[33m58\u001b[39m,\n      column: \u001b[33m26\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@5'\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1752906987810\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m'\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoContain\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // indexOf\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected value: \\x1B[32m503\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received array: \\x1B[31m[200, 404]\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/basic-functionality.spec.ts:58:26'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:27.718Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-f90049d90aaf35edc15c",
+              "file": "basic-functionality.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "should load without JavaScript errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 925,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:27.813Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3e1fed252e99486c803c-7e170384e6543fced468",
+              "file": "basic-functionality.spec.ts",
+              "line": 65,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "user-journey.spec.ts",
+      "file": "user-journey.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Complete User Journey",
+          "file": "user-journey.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should complete full idea-to-blueprint journey",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5971,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 70,
+                          "line": 78
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 70,
+                            "line": 78
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n\n\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:31.316Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 70,
+                        "line": 78
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-0930b28d520498909aba",
+              "file": "user-journey.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "should handle authentication flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 784,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:31.319Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-3ac099c85d01e8b279a4",
+              "file": "user-journey.spec.ts",
+              "line": 112,
+              "column": 7
+            },
+            {
+              "title": "should handle project management",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 4593,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 42,
+                          "line": 136
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 42,
+                            "line": 136
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:32.116Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 42,
+                        "line": 136
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-3cd18fd213ce04f77660",
+              "file": "user-journey.spec.ts",
+              "line": 129,
+              "column": 7
+            },
+            {
+              "title": "should complete full idea-to-blueprint journey",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6472,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 70,
+                          "line": 78
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 70,
+                            "line": 78
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n\n\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:44.720Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 70,
+                        "line": 78
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-187a6410f30126718c32",
+              "file": "user-journey.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "should handle authentication flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 984,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:45.313Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-69e7eb81df608779ff5e",
+              "file": "user-journey.spec.ts",
+              "line": 112,
+              "column": 7
+            },
+            {
+              "title": "should handle project management",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 1232,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 42,
+                          "line": 136
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 42,
+                            "line": 136
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:46.310Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 42,
+                        "line": 136
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-837c6d64ed35181a321c",
+              "file": "user-journey.spec.ts",
+              "line": 129,
+              "column": 7
+            },
+            {
+              "title": "should complete full idea-to-blueprint journey",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 6727,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 70,
+                          "line": 78
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 70,
+                            "line": 78
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n\n\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:05.583Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 70,
+                        "line": 78
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-9586e2d13f838c781466",
+              "file": "user-journey.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "should handle authentication flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1332,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:06.338Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-20be7095d414e8cac1c3",
+              "file": "user-journey.spec.ts",
+              "line": 112,
+              "column": 7
+            },
+            {
+              "title": "should handle project management",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1095,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 42,
+                          "line": 136
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 42,
+                            "line": 136
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:07.170Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 42,
+                        "line": 136
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-d1bcbd2c60744d564d2b",
+              "file": "user-journey.spec.ts",
+              "line": 129,
+              "column": 7
+            },
+            {
+              "title": "should complete full idea-to-blueprint journey",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 5690,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 70,
+                          "line": 78
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 70,
+                            "line": 78
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n\n\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:17.747Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 70,
+                        "line": 78
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-193709471866046d0f8d",
+              "file": "user-journey.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "should handle authentication flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 479,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:17.749Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-4f36ed1e808ceb0e7958",
+              "file": "user-journey.spec.ts",
+              "line": 112,
+              "column": 7
+            },
+            {
+              "title": "should handle project management",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 460,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 42,
+                          "line": 136
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 42,
+                            "line": 136
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:18.235Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 42,
+                        "line": 136
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-65a04c711aeabafddd7c",
+              "file": "user-journey.spec.ts",
+              "line": 129,
+              "column": 7
+            },
+            {
+              "title": "should complete full idea-to-blueprint journey",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 5484,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 70,
+                          "line": 78
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 70,
+                            "line": 78
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Processing')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Processing')\u001b[22m\n\n\n\u001b[0m \u001b[90m 76 |\u001b[39m     \n \u001b[90m 77 |\u001b[39m     \u001b[90m// Wait for processing to complete (with timeout)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Processing'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for blueprint to be generated\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Blueprint'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30000\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:78:70\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:28.743Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-ba0a9-l-idea-to-blueprint-journey-Mobile-Safari/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 70,
+                        "line": 78
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-0c1fc52be8806657a38a",
+              "file": "user-journey.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "should handle authentication flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 717,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:34.524Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-9bd5919c49ed1cf167a1",
+              "file": "user-journey.spec.ts",
+              "line": 112,
+              "column": 7
+            },
+            {
+              "title": "should handle project management",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 451,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 42,
+                          "line": 136
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 42,
+                            "line": 136
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 134 |\u001b[39m     \u001b[36mconst\u001b[39m isAuthPage \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Sign In'\u001b[39m)\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 135 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 136 |\u001b[39m     expect(isProjectsPage \u001b[33m||\u001b[39m isAuthPage)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 137 |\u001b[39m     \n \u001b[90m 138 |\u001b[39m     \u001b[36mif\u001b[39m (isProjectsPage) {\n \u001b[90m 139 |\u001b[39m       \u001b[90m// Test project creation\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:136:42\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:35.390Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Complete-User-c2022-d-handle-project-management-Mobile-Safari/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 42,
+                        "line": 136
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-1f3082811c9c5af4befa",
+              "file": "user-journey.spec.ts",
+              "line": 129,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Error Handling",
+          "file": "user-journey.spec.ts",
+          "line": 149,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should handle API errors gracefully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30085,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 167
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 165 |\u001b[39m       \n \u001b[90m 166 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 167 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 168 |\u001b[39m       \n \u001b[90m 169 |\u001b[39m       \u001b[90m// Should show error message\u001b[39m\n \u001b[90m 170 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Error, text=Failed, text=Something went wrong'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:32.391Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-970a0776cfdb38f492f8",
+              "file": "user-journey.spec.ts",
+              "line": 150,
+              "column": 7
+            },
+            {
+              "title": "should validate input requirements",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30305,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 181
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    55 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n\u001b[0m \u001b[90m 179 |\u001b[39m       \u001b[90m// Try to submit empty input\u001b[39m\n \u001b[90m 180 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 181 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 182 |\u001b[39m       \n \u001b[90m 183 |\u001b[39m       \u001b[90m// Should show validation error\u001b[39m\n \u001b[90m 184 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=required, text=Please enter, text=minimum'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:33.054Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-6ae35b828ed14bfef506",
+              "file": "user-journey.spec.ts",
+              "line": 174,
+              "column": 7
+            },
+            {
+              "title": "should handle API errors gracefully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30155,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 167
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    51 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 165 |\u001b[39m       \n \u001b[90m 166 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 167 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 168 |\u001b[39m       \n \u001b[90m 169 |\u001b[39m       \u001b[90m// Should show error message\u001b[39m\n \u001b[90m 170 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Error, text=Failed, text=Something went wrong'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:46.709Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-firefox/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-b05106d5b424fa93a588",
+              "file": "user-journey.spec.ts",
+              "line": 150,
+              "column": 7
+            },
+            {
+              "title": "should validate input requirements",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "timedOut",
+                      "duration": 30149,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 181
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    53 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 179 |\u001b[39m       \u001b[90m// Try to submit empty input\u001b[39m\n \u001b[90m 180 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 181 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 182 |\u001b[39m       \n \u001b[90m 183 |\u001b[39m       \u001b[90m// Should show validation error\u001b[39m\n \u001b[90m 184 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=required, text=Please enter, text=minimum'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:49.020Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-firefox/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-669f74a6507df197079f",
+              "file": "user-journey.spec.ts",
+              "line": 174,
+              "column": 7
+            },
+            {
+              "title": "should handle API errors gracefully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30116,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 167
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    56 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 165 |\u001b[39m       \n \u001b[90m 166 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 167 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 168 |\u001b[39m       \n \u001b[90m 169 |\u001b[39m       \u001b[90m// Should show error message\u001b[39m\n \u001b[90m 170 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Error, text=Failed, text=Something went wrong'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:07.697Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-webkit/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-a59a8a5ebb2a104ccc1e",
+              "file": "user-journey.spec.ts",
+              "line": 150,
+              "column": 7
+            },
+            {
+              "title": "should validate input requirements",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30123,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 181
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    56 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 179 |\u001b[39m       \u001b[90m// Try to submit empty input\u001b[39m\n \u001b[90m 180 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 181 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 182 |\u001b[39m       \n \u001b[90m 183 |\u001b[39m       \u001b[90m// Should show validation error\u001b[39m\n \u001b[90m 184 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=required, text=Please enter, text=minimum'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:08.862Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-webkit/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-cdfd22455dd7c854c18d",
+              "file": "user-journey.spec.ts",
+              "line": 174,
+              "column": 7
+            },
+            {
+              "title": "should handle API errors gracefully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30135,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 167
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 165 |\u001b[39m       \n \u001b[90m 166 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 167 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 168 |\u001b[39m       \n \u001b[90m 169 |\u001b[39m       \u001b[90m// Should show error message\u001b[39m\n \u001b[90m 170 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Error, text=Failed, text=Something went wrong'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:19.016Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Chrome/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-42e3b181318dfa01f49b",
+              "file": "user-journey.spec.ts",
+              "line": 150,
+              "column": 7
+            },
+            {
+              "title": "should validate input requirements",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 4,
+                      "status": "timedOut",
+                      "duration": 30195,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 181
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 179 |\u001b[39m       \u001b[90m// Try to submit empty input\u001b[39m\n \u001b[90m 180 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 181 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 182 |\u001b[39m       \n \u001b[90m 183 |\u001b[39m       \u001b[90m// Should show validation error\u001b[39m\n \u001b[90m 184 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=required, text=Please enter, text=minimum'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:20.349Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Chrome/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-a2cb86ba5286a8262a5d",
+              "file": "user-journey.spec.ts",
+              "line": 174,
+              "column": 7
+            },
+            {
+              "title": "should handle API errors gracefully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30086,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 167
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    56 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n\u001b[0m \u001b[90m 165 |\u001b[39m       \n \u001b[90m 166 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 167 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 168 |\u001b[39m       \n \u001b[90m 169 |\u001b[39m       \u001b[90m// Should show error message\u001b[39m\n \u001b[90m 170 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Error, text=Failed, text=Something went wrong'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:167:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:36.401Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-a6a3f-andle-API-errors-gracefully-Mobile-Safari/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-2c12746068f148b6acd8",
+              "file": "user-journey.spec.ts",
+              "line": 150,
+              "column": 7
+            },
+            {
+              "title": "should validate input requirements",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30087,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 26,
+                            "line": 181
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Generate\"), button:has-text(\"Submit\")').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity h-11 rounded-md px-8\">Generate Blueprint</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 179 |\u001b[39m       \u001b[90m// Try to submit empty input\u001b[39m\n \u001b[90m 180 |\u001b[39m       \u001b[36mconst\u001b[39m submitButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button:has-text(\"Generate\"), button:has-text(\"Submit\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 181 |\u001b[39m       \u001b[36mawait\u001b[39m submitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 182 |\u001b[39m       \n \u001b[90m 183 |\u001b[39m       \u001b[90m// Should show validation error\u001b[39m\n \u001b[90m 184 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=required, text=Please enter, text=minimum'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:181:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:38.176Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Error-Handlin-fb359-validate-input-requirements-Mobile-Safari/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-f5d4b739b92ed6fd6831",
+              "file": "user-journey.spec.ts",
+              "line": 174,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Responsive Design",
+          "file": "user-journey.spec.ts",
+          "line": 189,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should work on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 1137,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:35.755Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-f57d5b49948ca5a31fb4",
+              "file": "user-journey.spec.ts",
+              "line": 190,
+              "column": 7
+            },
+            {
+              "title": "should work on tablet devices",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 687,
+                      "error": {
+                        "message": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.",
+                        "stack": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 21,
+                          "line": 216
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 214 |\u001b[39m     \u001b[90m// Test touch interactions\u001b[39m\n \u001b[90m 215 |\u001b[39m     \u001b[36mconst\u001b[39m ideaInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 216 |\u001b[39m     \u001b[36mawait\u001b[39m ideaInput\u001b[33m.\u001b[39mtap()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m expect(ideaInput)\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m 218 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 219 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 21,
+                            "line": 216
+                          },
+                          "message": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.\n\n\u001b[0m \u001b[90m 214 |\u001b[39m     \u001b[90m// Test touch interactions\u001b[39m\n \u001b[90m 215 |\u001b[39m     \u001b[36mconst\u001b[39m ideaInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 216 |\u001b[39m     \u001b[36mawait\u001b[39m ideaInput\u001b[33m.\u001b[39mtap()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m expect(ideaInput)\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m 218 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 219 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:37.254Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 21,
+                        "line": 216
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-d482ee488c5f85c85b07",
+              "file": "user-journey.spec.ts",
+              "line": 206,
+              "column": 7
+            },
+            {
+              "title": "should work on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1131,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:51.893Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-33e0274e3414491d368f",
+              "file": "user-journey.spec.ts",
+              "line": 190,
+              "column": 7
+            },
+            {
+              "title": "should work on tablet devices",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 892,
+                      "error": {
+                        "message": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.",
+                        "stack": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 21,
+                          "line": 216
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 214 |\u001b[39m     \u001b[90m// Test touch interactions\u001b[39m\n \u001b[90m 215 |\u001b[39m     \u001b[36mconst\u001b[39m ideaInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 216 |\u001b[39m     \u001b[36mawait\u001b[39m ideaInput\u001b[33m.\u001b[39mtap()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m expect(ideaInput)\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m 218 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 219 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 21,
+                            "line": 216
+                          },
+                          "message": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.\n\n\u001b[0m \u001b[90m 214 |\u001b[39m     \u001b[90m// Test touch interactions\u001b[39m\n \u001b[90m 215 |\u001b[39m     \u001b[36mconst\u001b[39m ideaInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 216 |\u001b[39m     \u001b[36mawait\u001b[39m ideaInput\u001b[33m.\u001b[39mtap()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m expect(ideaInput)\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m 218 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 219 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:35:53.517Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 21,
+                        "line": 216
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-5b16990c69fff10ef59f",
+              "file": "user-journey.spec.ts",
+              "line": 206,
+              "column": 7
+            },
+            {
+              "title": "should work on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 557,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:12.645Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-8b6e2830730d1dccb902",
+              "file": "user-journey.spec.ts",
+              "line": 190,
+              "column": 7
+            },
+            {
+              "title": "should work on tablet devices",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 538,
+                      "error": {
+                        "message": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.",
+                        "stack": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.\n    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21",
+                        "location": {
+                          "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                          "column": 21,
+                          "line": 216
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 214 |\u001b[39m     \u001b[90m// Test touch interactions\u001b[39m\n \u001b[90m 215 |\u001b[39m     \u001b[36mconst\u001b[39m ideaInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 216 |\u001b[39m     \u001b[36mawait\u001b[39m ideaInput\u001b[33m.\u001b[39mtap()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m expect(ideaInput)\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m 218 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 219 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                            "column": 21,
+                            "line": 216
+                          },
+                          "message": "Error: locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.\n\n\u001b[0m \u001b[90m 214 |\u001b[39m     \u001b[90m// Test touch interactions\u001b[39m\n \u001b[90m 215 |\u001b[39m     \u001b[36mconst\u001b[39m ideaInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 216 |\u001b[39m     \u001b[36mawait\u001b[39m ideaInput\u001b[33m.\u001b[39mtap()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 217 |\u001b[39m     \u001b[36mawait\u001b[39m expect(ideaInput)\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m 218 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 219 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts:216:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:13.366Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/test-results/user-journey-Responsive-Design-should-work-on-tablet-devices-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/naitikgupta/Desenyon/Projects/desenyon-infinite-idea/tests/e2e/user-journey.spec.ts",
+                        "column": 21,
+                        "line": 216
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-2e8f6a956fd7130fccc5",
+              "file": "user-journey.spec.ts",
+              "line": 206,
+              "column": 7
+            },
+            {
+              "title": "should work on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 447,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:23.863Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-00ff94ef893c3b0d4a71",
+              "file": "user-journey.spec.ts",
+              "line": 190,
+              "column": 7
+            },
+            {
+              "title": "should work on tablet devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 536,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:24.395Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-0f44f3d19428a84af8aa",
+              "file": "user-journey.spec.ts",
+              "line": 206,
+              "column": 7
+            },
+            {
+              "title": "should work on mobile devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 562,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:39.476Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-2c339a7402d51c694f67",
+              "file": "user-journey.spec.ts",
+              "line": 190,
+              "column": 7
+            },
+            {
+              "title": "should work on tablet devices",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 695,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-19T06:36:40.185Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "71a1cccb6623f87e1233-620c677230d1cc102da8",
+              "file": "user-journey.spec.ts",
+              "line": 206,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-19T06:35:24.887Z",
+    "duration": 103624.503,
+    "expected": 37,
+    "skipped": 0,
+    "unexpected": 23,
+    "flaky": 0
+  }
+}

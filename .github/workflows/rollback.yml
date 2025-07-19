@@ -1,0 +1,88 @@
+name: Emergency Rollback
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to rollback'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+      deployment_id:
+        description: 'Previous deployment ID to rollback to'
+        required: true
+        type: string
+      reason:
+        description: 'Reason for rollback'
+        required: true
+        type: string
+
+jobs:
+  rollback:
+    name: Rollback Deployment
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate rollback request
+        run: |
+          echo "Rolling back ${{ github.event.inputs.environment }} to deployment ${{ github.event.inputs.deployment_id }}"
+          echo "Reason: ${{ github.event.inputs.reason }}"
+
+      - name: Rollback Vercel deployment
+        run: |
+          npx vercel rollback ${{ github.event.inputs.deployment_id }} --token ${{ secrets.VERCEL_TOKEN }} --scope ${{ secrets.VERCEL_ORG_ID }}
+
+      - name: Verify rollback
+        run: |
+          sleep 30
+          if [ "${{ github.event.inputs.environment }}" == "production" ]; then
+            curl -f https://desenyon-infinite-idea.vercel.app/health || exit 1
+          else
+            curl -f https://staging-desenyon-infinite-idea.vercel.app/health || exit 1
+          fi
+
+      - name: Notify rollback completion
+        uses: 8398a7/action-slack@v3
+        with:
+          status: 'success'
+          channel: '#alerts'
+          text: |
+            🚨 ROLLBACK COMPLETED
+            Environment: ${{ github.event.inputs.environment }}
+            Deployment ID: ${{ github.event.inputs.deployment_id }}
+            Reason: ${{ github.event.inputs.reason }}
+            Initiated by: ${{ github.actor }}
+          webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Create rollback issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Emergency Rollback - ${context.payload.inputs.environment}`,
+              body: `
+                ## Rollback Details
+                - **Environment**: ${context.payload.inputs.environment}
+                - **Deployment ID**: ${context.payload.inputs.deployment_id}
+                - **Reason**: ${context.payload.inputs.reason}
+                - **Initiated by**: ${context.actor}
+                - **Timestamp**: ${new Date().toISOString()}
+                
+                ## Next Steps
+                - [ ] Investigate root cause
+                - [ ] Fix underlying issue
+                - [ ] Test fix in staging
+                - [ ] Deploy fix to production
+                - [ ] Update monitoring/alerts if needed
+              `,
+              labels: ['rollback', 'urgent', context.payload.inputs.environment]
+            })
